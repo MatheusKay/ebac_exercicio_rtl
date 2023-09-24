@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import Post from ".";
 
 describe('Testes para o componente Post', () => {
@@ -8,5 +8,7 @@ describe('Testes para o componente Post', () => {
                 teste
             </Post>
         )
+
+        expect(screen.getByText('teste')).toBeInTheDocument()
     })
 })

@@ -21,7 +21,7 @@ describe('Teste para o componente PostComment', () => {
 
         fireEvent.change(screen.getByTestId('area-comentario'), {
             target: {
-                value: 'Nice man'
+                value: 'nicee man'
             },
         })
 
